@@ -7,17 +7,17 @@ class Payload
     /**
      * @var string
      */
-    private $title;
+    protected $title;
 
     /**
      * @var string
      */
-    private $body;
+    protected $body;
 
     /**
      * @var string
      */
-    private $deepLink;
+    protected $deepLink;
 
     /**
      * Construct.

@@ -20,17 +20,17 @@ class Package
     /**
      * @var string
      */
-    private $packageDir;
+    protected $packageDir;
 
     /**
      * @var string
      */
-    private $userId;
+    protected $userId;
 
     /**
      * @var string
      */
-    private $zipPath;
+    protected $zipPath;
 
     /**
      * @param string $packageDir

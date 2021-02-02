@@ -72,7 +72,7 @@ class PackageGenerator
         return $package;
     }
 
-    private function generatePackage(Package $package)
+    protected function generatePackage(Package $package)
     {
         $packageDir = $package->getPackageDir();
         $zipPath = $package->getZipPath();
@@ -110,7 +110,7 @@ class PackageGenerator
         }
     }
 
-    private function copyPackageFiles(Package $package)
+    protected function copyPackageFiles(Package $package)
     {
         $packageDir = $package->getPackageDir();
 
@@ -132,12 +132,12 @@ class PackageGenerator
         }
     }
 
-    private function createPackageManifest(Package $package)
+    protected function createPackageManifest(Package $package)
     {
         return $this->createPackageManifester()->createManifest($package);
     }
 
-    private function createPackageSignature(Package $package)
+    protected function createPackageSignature(Package $package)
     {
         return $this->createPackageSigner()->createPackageSignature(
             $this->certificate, $package

@@ -11,32 +11,32 @@ class SocketClient
     /**
      * @var \JWage\APNS\Certificate
      */
-    private $certificate;
+    protected $certificate;
 
     /**
      * @var string
      */
-    private $host;
+    protected $host;
 
     /**
      * @var int
      */
-    private $port;
+    protected $port;
 
     /**
      * @var Resource
      */
-    private $apnsResource;
+    protected $apnsResource;
 
     /**
      * @var integer
      */
-    private $error;
+    protected $error;
 
     /**
      * @var string
      */
-    private $errorString;
+    protected $errorString;
 
     /**
      * Construct.

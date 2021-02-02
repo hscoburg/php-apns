@@ -7,12 +7,12 @@ class Certificate
     /**
      * @var string
      */
-    private $certificateString;
+    protected $certificateString;
 
     /**
      * @var string
      */
-    private $password;
+    protected $password;
 
     /**
      * Construct.

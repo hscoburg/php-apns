@@ -7,7 +7,7 @@ class Sender
     /**
      * @var \JWage\APNS\Client
      */
-    private $client;
+    protected $client;
 
     /**
      * Construct.
@@ -42,7 +42,7 @@ class Sender
      * @param string $deepLink
      * @return \JWage\APNS\Payload
      */
-    private function createPayload($title, $body, $deepLink = null)
+    protected function createPayload($title, $body, $deepLink = null)
     {
         return new Payload($title, $body, $deepLink);
     }

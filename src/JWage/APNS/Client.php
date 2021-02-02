@@ -7,7 +7,7 @@ class Client
     /**
      * @var \JWage\APNS\SocketClient
      */
-    private $socketClient;
+    protected $socketClient;
 
     /**
      * Construct.

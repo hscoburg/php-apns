@@ -11,12 +11,12 @@ class APNSMessage
     /**
      * @var string
      */
-    private $deviceToken;
+    protected $deviceToken;
 
     /**
      * @var \JWage\APNS\Payload
      */
-    private $payload;
+    protected $payload;
 
     /**
      * Construct.
@@ -51,7 +51,7 @@ class APNSMessage
      * @param array $payload
      * @return string $payloadJson
      */
-    private function jsonEncode(array $payload)
+    protected function jsonEncode(array $payload)
     {
         return json_encode($payload);
     }
